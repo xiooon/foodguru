@@ -14,7 +14,7 @@ function setupLogin() {
         document.getElementById("error_txt").innerText = msg.error;
       }
     };
-    request.open("POST", "http://localhost:8080/api/login");
+    request.open("POST", "http://44.206.247.202:3000/api/login");
     request.setRequestHeader("Content-Type", "application/json");
     request.send(
       JSON.stringify({
@@ -39,7 +39,7 @@ function setupRegister() {
         document.getElementById("error_txt").innerText = msg.error;
       }
     };
-    request.open("POST", "http://localhost:8080/api/signup");
+    request.open("POST", "http://44.206.247.202:3000/api/signup");
     request.setRequestHeader("Content-Type", "application/json");
     request.send(
       JSON.stringify({
