@@ -24,7 +24,7 @@ function showRestaurants() {
       }
     }
   };
-  request.open("GET", "http://localhost:8080/api/restaurants");
+  request.open("GET", "http://44.206.247.202:3000/api/restaurants");
   request.send(null);
 }
 
