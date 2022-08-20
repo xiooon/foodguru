@@ -70,7 +70,7 @@ function showRestaurant() {
     };
     getRestaurantRequest.open(
       "GET",
-      "http://localhost:8080/api/restaurants/" + id
+      "http://44.206.247.202:3000/api/restaurants/" + id
     );
     getRestaurantRequest.send(null);
   }
@@ -120,7 +120,7 @@ function showRestaurantReviews() {
         }
       }
     };
-    request.open("GET", "http://localhost:8080/api/reviews/restaurant/" + id);
+    request.open("GET", "http://44.206.247.202:3000/api/reviews/restaurant/" + id);
     request.send(null);
   }
 }
