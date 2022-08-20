@@ -2,10 +2,10 @@ var mysql = require("mysql");
 
 const pool = mysql.createPool({
   connectionLimit: 10,
-  password: "cdev",
-  user: "root",
+  password: "12345678",
+  user: "admin",
   database: "food_guru",
-  host: "localhost",
+  host: "gamereview.cwwgwxgzzts7.us-east-1.rds.amazonaws.com",
   port: '3306'
 });
 
