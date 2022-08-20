@@ -41,6 +41,4 @@ app.get("/review/:reviewid/:restaurantid", (req, res) => {
   res.sendFile("/public/review.html", { root: __dirname });
 });
 
-app.listen(8080, "127.0.0.1");
-  console.log("Web server running @ http://127.0.0.1:8080");
-});
+app.listen(port, () => console.log('Example app listening on port ${port}!'))
