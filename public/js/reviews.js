@@ -21,7 +21,7 @@ function showReview() {
         document.getElementById("comments").value = review.comments || "";
       }
     };
-    getRequest.open("GET", "http://localhost:8080/api/reviews/" + reviewId);
+    getRequest.open("GET", "http://44.206.247.202:3000/api/reviews/" + reviewId);
     getRequest.send(null);
   } else {
     deleteBtn.style.display = "none";
@@ -60,7 +60,7 @@ function addReview() {
       document.getElementById("error_txt").innerText = msg.error;
     }
   };
-  request.open("POST", "http://localhost:8080/api/reviews/");
+  request.open("POST", "http://44.206.247.202:3000/api/reviews/");
   request.setRequestHeader("Content-Type", "application/json");
   request.send(
     JSON.stringify({
@@ -89,7 +89,7 @@ function deleteReview() {
       document.getElementById("error_txt").innerText = msg.error;
     }
   };
-  request.open("DELETE", "http://localhost:8080/api/reviews/" + reviewId);
+  request.open("DELETE", "http://44.206.247.202:3000/api/reviews/" + reviewId);
   request.setRequestHeader("Content-Type", "application/json");
   request.send(null);
 }
@@ -109,7 +109,7 @@ function updateReview() {
       document.getElementById("error_txt").innerText = msg.error;
     }
   };
-  request.open("PUT", "http://localhost:8080/api/reviews/" + reviewId);
+  request.open("PUT", "http://44.206.247.202:3000/api/reviews/" + reviewId);
   request.setRequestHeader("Content-Type", "application/json");
   request.send(
     JSON.stringify({
